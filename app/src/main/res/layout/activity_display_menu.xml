@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:hint="MENU NAME"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="47dp" />
+
+            <ImageView
+                android:id="@+id/imageViewMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                tools:layout_editor_absoluteX="141dp"
+                tools:layout_editor_absoluteY="120dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Ingredients"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="324dp" />
+
+            <TextView
+                android:id="@+id/textViewIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:hint="ingredients menu"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Methods"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="433dp" />
+
+            <TextView
+                android:id="@+id/textViewMethods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Methods menu"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Edit"
+                    tools:layout_editor_absoluteX="87dp"
+                    tools:layout_editor_absoluteY="644dp" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="DELETE" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

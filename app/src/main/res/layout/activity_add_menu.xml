@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMenu">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Menu Name"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Ingredients"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMethods"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/editTextMethods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Methods"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/addMenuButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIngredients" />
+
+    <Button
+        android:id="@+id/addMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toRightOf="@+id/updateMenuButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMethods"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/updateMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/addMenuButton"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMethods"
+        app:layout_constraintVertical_bias="0.5" />
+
+</android.support.constraint.ConstraintLayout>
